@@ -15,18 +15,22 @@ public class Multiplicacion_Numeros {
     public static void main(String[] args) {
         Scanner teclado=new Scanner ( System.in);
         boolean nuevo_numero = true;
+        int acumulador = 1;
         while(nuevo_numero == true){
             System.out.println("Desea ingresar otro número si/no");
             String respuesta = teclado.next();
-            if(respuesta == "si"){
+            respuesta = respuesta.toLowerCase();
+            if(respuesta.equals("si")  ){
                 System.out.println("Ingrese el número");
                 int numero = teclado.nextInt();
-            }else if(respuesta== "no"){
+                acumulador = acumulador + numero;
+            }else if(respuesta.equals("no")){
                 nuevo_numero = false; //hacemos que finalice el ciclo de repeticion
                 
                 
             }
         }
+        System.out.println("La multiplicación de los números es: "+acumulador);
         
     }
     
