@@ -10,5 +10,18 @@ package Trabajo_Grupal;
  * @author UTPL
  */
 public class T2 {
-    
+    public static void main(String[] args) {
+        int cont = 0;
+        int num[] = new int[20];
+        for (int i = 0; i < num.length; i++) {
+            num[i] = cont + 2;
+            cont = cont + 2;
+        }
+        for (int i = 0; i < num.length; i++) {
+            System.out.println(+num[i]);
+        }
+    }
+
 }
+    
+
