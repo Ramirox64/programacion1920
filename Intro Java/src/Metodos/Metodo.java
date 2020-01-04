@@ -22,9 +22,8 @@ public class Metodo {
     }
 
     /**
-     * MÈTODO QUE NO RETORNA VALOR Mètodo para presentar un saludo en pantalla n
-     * veces
-     *
+     * MÈTODO QUE NO RETORNA VALOR 
+     * Mètodo para presentar un saludo en pantalla n veces
      * @param nombre
      * @param nro_veces
      */
